@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0'">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Sell all the stuff!</title>
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <!-- Handlebars -->
+  <script src="js-lib/handlebars-v1.3.0.js"></script>
+
+  <!-- Masonry -->
+  <script src="js-lib/masonry.pkgd.min.js"></script>
+
+  <!-- Foggy -->
+  <script src="js-lib/jquery.foggy.min.js"></script>
+
+  <!-- Custom stuff -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/logic.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <h2>Email me at <a href="mailto:email@email.com">email@email.com</a> to make any offers!</h2>
+  </div>
+
+  <div id="container"></div>
+
+  <!-- Handlebars #stuff template -->
+  <script id="stuff" type="text/x-handlebars-template">
+    {{#each product}}
+    <div class='item {{status}}'>
+      <div class="img_container {{status}}">
+        <img src='img/items/{{image}}' />
+      </div>
+      <div class="details {{status}}">
+        <div class='price'>{{price}}</div>
+        <div class='item-name'>{{name}}</div>
+        <div class='description'>
+          <p>{{description}}</p>
+        </div>
+        <div class='availability'>Available: <span class='date'>{{availability}}</span></div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+</body>
+</html>
