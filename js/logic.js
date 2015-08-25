@@ -9,16 +9,9 @@ $.ajax({
 
     $('#container').append(template({product:context}));
 
-    // In case ajax is slower than page load
     runMasonry();
     markSoldItems();
   }
-});
-
-// On load, run Masonry and Foggy
-$(window).load(function() {
-  runMasonry();
-  markSoldItems();
 });
 
 // Configures Masonry for a responsive card layout
