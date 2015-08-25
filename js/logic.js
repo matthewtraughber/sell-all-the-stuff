@@ -8,13 +8,21 @@ $.ajax({
     var context = product;
 
     $('#container').append(template({product:context}));
+
+    // In case ajax is slower than page load
+    runMasonry();
+    markSoldItems();
   }
 });
 
 // On load, run Masonry and Foggy
 $(window).load(function() {
-  // Masonry setup
-  // -------------
+  runMasonry();
+  markSoldItems();
+});
+
+// Configures Masonry for a responsive card layout
+function runMasonry() {
   var $container = $('#container');
 
   $container.masonry({
@@ -25,20 +33,21 @@ $(window).load(function() {
     gutter: 14,
     isFitWidth: true
   });
+}
 
-  // Foggy setup
-  // -----------
+// Marks sold items as sold & blurs them
+function markSoldItems() {
   $(".img_container.sold").foggy({
-   blurRadius: 8,
-   opacity: 0.8,
-   cssFilterSupport: true
- });
+    blurRadius: 8,
+    opacity: 0.8,
+    cssFilterSupport: true
+  });
 
   $(".details.sold").foggy({
-   blurRadius: 1,
-   opacity: 0.8,
-   cssFilterSupport: true
- });
+    blurRadius: 1,
+    opacity: 0.8,
+    cssFilterSupport: true
+  });
 
   $(".sold.item").prepend("<span class='sold-text'>sold</span>");
-});
+}
