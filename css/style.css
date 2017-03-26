@@ -1,19 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,100);
 
 body {
-  background-color: #1985A1;
+  background-color: #fff;
   font-family: 'Roboto', arial, sans-serif;
 }
 
 a, a:link, a:visited {
-  color: #ED6A5A;
+  color: #edd400;
   text-decoration: none;
   font-weight: 500;
   transition: color .2s ease;
 }
 
 a:hover, a:active {
-  color: #1985A1;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -24,14 +24,14 @@ a:hover, a:active {
   height: 4em;
   width: 100%;
   text-align: center;
-  background-color: #fff;
+  background-color: #888a85;
 
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
 #header h2 {
   margin-top: .35em;
-  color: #46494C;
+  color: #eeeeec;
   font-weight: 300;
 
   transition: font .5s ease
@@ -65,7 +65,7 @@ a:hover, a:active {
 }
 
 .sold-text {
-  color: #46494C;
+  color: #ef2929;
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -82,10 +82,10 @@ a:hover, a:active {
   border-radius: 10px;
   width:  20em;
   height: 25em;
-  background: #fff;
-  border: 2px solid #46494C;
+  background: #2e3436;
+  border: 2px solid #2e3436;
   padding: .5em;
-  color: #46494C;
+  color: #d3d7cf;
   overflow: hidden;
   margin: .6em 0 .6em 0;
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
@@ -95,8 +95,8 @@ a:hover, a:active {
   padding: 0;
   width: 100%;
   height: 60%;
-  background-color: #46494C;
-  border-bottom: 1px solid #46494C;
+  background-color: #2e3436;
+  border-bottom: 1px solid #2e3436;
   overflow: hidden;
 }
 
@@ -119,11 +119,12 @@ a:hover, a:active {
   width: 100%;
   padding: .25em;
   font-weight: 500;
+  color: #729fcf;
 }
 
 .item .price {
   font-size: 2em;
-  color: #46494C;
+  color: #8ae234;
   margin-left: -.5em;
   position: absolute;
   bottom: 0em;
@@ -148,9 +149,11 @@ a:hover, a:active {
   text-align: left;
   font-style: italic;
   font-weight: 300;
+
 }
 
 .item .availability .date {
   font-weight: 500;
   font-style: normal;
+  color: #ad7fa8;
 }

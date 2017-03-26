@@ -43,11 +43,10 @@
   <script id="stuff" type="text/x-handlebars-template">
     {{#each product}}
     <div class='item {{status}}'>
-      <div class="img_container {{status}}">
-        <a href='img/items/{{image}}'>
-          <img src='img/items/{{image-thumb}}' />
-        </a>
-      </div>
+      <a href='img/items/{{image}}'>
+        <div class="img_container {{status}}" style="background-image: url('img/items/{{image-thumb}}');">
+        </div>
+      </a>  
       <div class="details {{status}}">
         <div class='item-name'>{{name}}</div>
         <div class='description'>
