@@ -5,6 +5,7 @@
     "price":"$900",
     "description":"The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple.",
     "image":"apple.jpg",
+    "image-thumb":"apple.jpg",
     "availability":"July"
   },
   {
@@ -13,6 +14,7 @@
     "price":"$125",
     "description":"The banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.",
     "image":"bananas.jpg",
+    "image-thumb":"bananas.jpg",
     "availability":"Now!"
   },
   {
@@ -21,6 +23,7 @@
     "price":"$75",
     "description":"Cucumber (Cucumis sativus) is a widely cultivated plant in the gourd family, Cucurbitaceae.",
     "image":"cucumber.jpg",
+    "image-thumb":"cucumber.jpg",
     "availability":"Now!"
   },
   {
@@ -29,6 +32,7 @@
     "price":"$75",
     "description":"The lemon (Citrus × limon) is a species of small evergreen tree native to Asia.",
     "image":"lemons.jpg",
+    "image-thumb":"lemons.jpg",
     "availability":"January"
   },
   {
@@ -37,6 +41,7 @@
     "price":"$300",
     "description":"The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.",
     "image":"orange.jpg",
+    "image-thumb":"orange.jpg",
     "availability":"Now!"
   },
   {
@@ -45,6 +50,7 @@
     "price":"$475",
     "description":"The garden strawberry (or simply strawberry; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries).",
     "image":"strawberries.jpg",
+    "image-thumb":"strawberries.jpg",
     "availability":"August"
   }
 ]

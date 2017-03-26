@@ -44,7 +44,9 @@
     {{#each product}}
     <div class='item {{status}}'>
       <div class="img_container {{status}}">
-        <img src='img/items/{{image}}' />
+        <a href='img/items/{{image}}'>
+          <img src='img/items/{{image-thumb}}' />
+        </a>
       </div>
       <div class="details {{status}}">
         <div class='price'>{{price}}</div>
